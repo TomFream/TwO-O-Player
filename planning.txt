@@ -1,0 +1,26 @@
+Game classes: 
+
+Player: Creates two player objects containing player state
+  - Instance variables:
+    @name - needs to be readable
+    @lives - needs to be readable and writable
+
+  - Instance methods:
+    lose life - Called when player instance gets a question wrong, reduces value of lives by 1
+    lose game - called when player life count = 0
+# Player class creates two playe objects. The only purpose of the player objects is to store state of each player, and pass it to the game logic instances.
+
+
+
+game logic: Needs to be able to read number of lives from each player instance
+  instance methods:
+    - alternate player turn: stores current player turn in variabel, and alternates vatiable each time it's called
+    - generate randon math question: select two random numbers between 0 - 20
+    - determine correctness: determine result of math question, compares with input from player
+    - display results: Correct / incorrect , displays scores
+    - game over: given the name of the player that lost
+# Game logic class recieves state of each player, 
+
+game loop
+
+
